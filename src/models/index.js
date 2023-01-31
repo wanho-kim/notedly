@@ -1,7 +1,9 @@
-const Note = require('./note');
+import Note from './note.js';
+import User from './user.js';
 
 const models = {
-  Note
+  Note,
+  User
 };
 
-module.exports = models;
+export default models;

@@ -49,5 +49,6 @@
     "faker": "4.1.0",
     "node-fetch": "2.5.0",
     "prettier": "1.18.2"
-  }
+  },
+  "type": "module"
 }

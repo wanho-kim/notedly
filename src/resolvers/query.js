@@ -1,6 +1,6 @@
-const { models } = require('mongoose');
+import models from 'mongoose';
 
-module.exports = {
+const Query = {
   notes: async (parent, args, { models }) => {
     return await models.Note.find();
   },
@@ -8,3 +8,5 @@ module.exports = {
     return await models.Note.findById(args.id);
   }
 };
+
+export default Query;

@@ -1,6 +1,6 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
-module.exports = {
+const db = {
   connect: DB_HOST => {
     mongoose.set('useNewUrlParser', true);
     mongoose.set('useFindAndModify', false);
@@ -20,3 +20,5 @@ module.exports = {
     mongoose.connection.close();
   }
 };
+
+export default db;
